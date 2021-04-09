@@ -1,0 +1,123 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "mothukuri swathi",
+      "mobile": "8955098776",
+      "gender": "Female",
+      "rating": "4"
+    },
+    {
+      "id": 2,
+      "name": "mothukuri padma",
+      "mobile": "6767676767",
+      "gender": "Male",
+      "rating": "5"
+    },
+    {
+      "id": 3,
+      "name": "mothukuri murali",
+      "mobile": 7687897689,
+      "gender": "Male",
+      "rating": "4"
+    },
+    {
+      "id": 4,
+      "name": "zxcvb",
+      "mobile": "7687897688",
+      "gender": "Female",
+      "rating": "2"
+    },
+    {
+      "id": 5,
+      "name": "Sonali ojha",
+      "mobile": 7687897689,
+      "gender": "Female",
+      "rating": "4"
+    },
+    {
+      "id": 6,
+      "name": "swasd",
+      "mobile": 7687897689,
+      "gender": "Male",
+      "rating": "4"
+    },
+    {
+      "id": 7,
+      "name": "swasd",
+      "mobile": 7687897689,
+      "gender": "Female",
+      "rating": "3"
+    },
+    {
+      "id": 8,
+      "name": "Valli",
+      "mobile": 7687897689,
+      "gender": "Female",
+      "rating": "2"
+    },
+    {
+      "id": 9,
+      "name": "swasd",
+      "mobile": 7687897689,
+      "gender": "Male",
+      "rating": "4"
+    },
+    {
+      "id": 10,
+      "name": "swathi mothukuri",
+      "mobile": 7878787878,
+      "gender": "Male",
+      "rating": "2"
+    },
+    {
+      "id": 11,
+      "name": "bala",
+      "mobile": 7676754546,
+      "gender": "Female",
+      "rating": "5"
+    },
+    {
+      "id": 12,
+      "name": "padma",
+      "mobile": 1234567676,
+      "gender": "Female",
+      "rating": "3"
+    },
+    {
+      "id": 13,
+      "name": "swasd",
+      "mobile": "8687897689",
+      "gender": "Female",
+      "rating": "2"
+    },
+    {
+      "id": 14,
+      "name": "murali",
+      "mobile": 8987676765,
+      "gender": "Male",
+      "rating": "5"
+    },
+    {
+      "id": 15,
+      "name": "yamini",
+      "mobile": "7687897689",
+      "gender": "Female",
+      "rating": "5"
+    },
+    {
+      "id": 16,
+      "name": "sigma",
+      "mobile": "9876543456",
+      "gender": "Female",
+      "rating": "5"
+    },
+    {
+      "id": 17,
+      "name": "Rama Lakshmi Bala",
+      "mobile": "7687897689",
+      "gender": "Female",
+      "rating": "3"
+    }
+  ]
+}

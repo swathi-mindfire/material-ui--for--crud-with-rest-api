@@ -1,0 +1,38 @@
+mat-grid-tile{
+    
+    margin-top: 20px;
+   
+    max-width: 550px !important;
+    
+    margin-bottom: 60px !important;
+    
+}
+
+.list{
+    margin-right: 100px !important;
+    margin-left: 100px !important;
+    
+
+}
+
+.form{
+    background-color: #5bc0de;
+    border-radius: 20px;
+    margin-top: 60px !important;
+    margin-left: 50px;
+    height: 500px !important;
+  
+}
+.main-heading{
+    margin-left: 36vw !important;
+    margin-top: 20px;
+    color: #f50057;
+    font-size: 30px;
+    font-weight:500;
+}
+
+.header{
+    margin-left: 68vw;
+    color:#4a148c;
+    font-weight: 900;
+}

@@ -1,0 +1,8 @@
+<mat-card (click)= "editStudent()" [class.bg-primary]= "clicked" [class.text-white]= "clicked" class="data-card s-card">    
+    <mat-grid-list cols= "4" rowHeight ="30px">
+        <mat-grid-tile> {{studentValues[0]}}</mat-grid-tile>
+        <mat-grid-tile>{{studentValues[1] | titlecase}}</mat-grid-tile>
+        <mat-grid-tile>{{studentValues[2]}}</mat-grid-tile>
+        <mat-grid-tile>{{studentValues[4]}}</mat-grid-tile>
+    </mat-grid-list>
+</mat-card>

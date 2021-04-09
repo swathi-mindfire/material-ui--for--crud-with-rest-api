@@ -1,0 +1,52 @@
+
+<mat-card class="main">
+    
+    <div class="show-stars d-flex">
+        <div *ngIf = "ratingFromChild!=-1" id="showrating">
+            <span>&emsp;Rating: </span>
+            <span *ngFor ="let i of filledStars"><i class="fa fa-star filled"></i></span>
+            <span *ngFor ="let i of emptyStars"><i class="fa fa-star"></i></span>
+        </div>
+        <div *ngIf ="displayName!=false">
+            <p>Name:   {{fullName.value | titlecase}}</p>
+        </div>
+    </div>
+   
+    <div [formGroup] = "studentForm">
+        <div class="name-input ">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Full Name</mat-label>
+                <input name="firstName" formControlName = "name" id="name" #fullName  matInput  required>
+                
+            </mat-form-field>
+            <div *ngIf = "studentForm.controls['name'].touched &&  studentForm.controls['name'].errors" class="err">
+                <mat-error  *ngIf = "studentForm.controls['name'].errors.required ">Please Enter your Full name</mat-error>
+                <mat-error  *ngIf = "studentForm.controls['name'].errors.minlength">Name is minimum 3 characters</mat-error>      
+            </div> 
+        </div>
+        <div class="mobile-input ">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Mobile Number</mat-label>
+                <input name="mobile" formControlName = "mobile" id="mobile" #mobile  matInput required >                
+            </mat-form-field>
+            <div *ngIf = "studentForm.controls['mobile'].touched &&  studentForm.controls['mobile'].errors" class="err">
+                <mat-error  *ngIf = "studentForm.controls['mobile'].errors.required ">Please Enter your  Mobile Number</mat-error>
+                <mat-error  *ngIf = "studentForm.controls['mobile'].errors.minlength ||studentForm.controls['mobile'].errors.maxlength " >Enter valid Mobile Number</mat-error>       
+            </div> 
+        </div>
+        <div class="gender-input">            
+            <mat-radio-group class="full-width" formControlName = "gender">Gender
+                <mat-radio-button value= "Male" color="primary" class="gender-layout">Male</mat-radio-button>
+                <mat-radio-button value= "Female" color="primary" class="gender-layout">Female</mat-radio-button>
+                <mat-radio-button value= "other"  color="primary" class="gender-layout">Other</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <app-student-rating (sendRating) ="getRating($event)"></app-student-rating>
+        <button mat-flat-button color="primary" [disabled] ="studentForm.invalid || ratingFromChild==-1"(click)="submitAction()" class="full-width action">{{btnName}}</button>
+    </div>
+   
+    <div *ngIf = "postError !=null" class="text-center text-white mt-2"><h3>{{postError}}</h3></div>
+  
+</mat-card>
+         
+        

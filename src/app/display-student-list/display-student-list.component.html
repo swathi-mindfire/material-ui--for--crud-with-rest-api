@@ -1,0 +1,17 @@
+<mat-card class="new"> 
+    <mat-card-title *ngIf = "notification != null" class="text-center text-info">
+        {{notification}}
+    </mat-card-title>
+    <mat-grid-list cols= "4" class="head-bg" rowHeight ="60px">
+        <mat-grid-tile>Id</mat-grid-tile>
+        <mat-grid-tile>Name</mat-grid-tile>
+        <mat-grid-tile>Mobile </mat-grid-tile>
+        <mat-grid-tile>Rating</mat-grid-tile>
+    </mat-grid-list>
+      <div id="data">          
+        <div>{{message}}</div>
+        <div *ngFor = "let s of Students" class="grid-box">
+            <app-student-details-card [student] = s  (click)= "updateSelectedChild(s.id)"  ></app-student-details-card>
+        </div>
+    </div>
+</mat-card>

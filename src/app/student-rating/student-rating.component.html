@@ -1,0 +1,13 @@
+<mat-form-field class="full-width">
+    <mat-label>Give Rating</mat-label>
+    <mat-select (selectionChange)="ratingUpdate()" name="rating" [formControl]= "rating" class="form-control" id="rating" >        
+        <mat-option *ngFor ="let i of ratings" value="{{i}}"> {{i}}</mat-option>
+    </mat-select>
+    <mat-error *ngIf = "rating.invalid" class="errormsg">Please Give Rating</mat-error>
+
+    <br>
+</mat-form-field>
+
+        
+         
+        

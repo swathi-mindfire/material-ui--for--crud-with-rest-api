@@ -1,0 +1,59 @@
+#gender{
+    position: relative;
+    left:-15px;
+}
+.extra{
+    height:40px;
+}
+
+#main{
+    border-radius: 20px;
+    color:white;
+}
+
+.heding{
+    height:60px;
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+.filled{
+    color:orange;
+}
+mat-card{
+    width:500px;
+}
+.full-width,.err{
+    width:80%;
+    margin-left: 10%;
+   
+}
+.full-width{
+    margin-top: 20px;
+}
+
+.d-flex{
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-around!important;
+
+}
+.gender-layout{
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.gender-input{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+mat-card{
+    height: 450px !important;
+    border-radius: 20px !important;
+}
+.action{
+    margin-top:50px
+}

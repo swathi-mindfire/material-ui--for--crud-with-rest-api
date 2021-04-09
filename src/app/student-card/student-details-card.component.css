@@ -1,0 +1,16 @@
+.s-card:hover {
+    background-color: #6c757d !important;
+    color: white;
+}
+.s-card{
+    cursor: pointer;
+}
+.data-card{
+    width: 500px;
+}
+.bg-primary{
+    background-color: 	#5cb85c;
+}
+.text-white{
+    color: white;
+}
