@@ -1,6 +1,4 @@
-
-<mat-card class="main">
-    
+<div class="show-name">
     <div class="show-stars d-flex">
         <div *ngIf = "ratingFromChild!=-1" id="showrating">
             <span>&emsp;Rating: </span>
@@ -11,12 +9,13 @@
             <p>Name:   {{fullName.value | titlecase}}</p>
         </div>
     </div>
-   
+</div>
+<mat-card class="main">   
     <div [formGroup] = "studentForm">
         <div class="name-input ">
             <mat-form-field class="full-width" appearance="outline">
                 <mat-label>Full Name</mat-label>
-                <input name="firstName" formControlName = "name" id="name" #fullName  matInput  required>
+                <input name="firstName" formControlName = "name" id="name" #fullName  matInput  required (change)="displayNameCheck()">
                 
             </mat-form-field>
             <div *ngIf = "studentForm.controls['name'].touched &&  studentForm.controls['name'].errors" class="err">

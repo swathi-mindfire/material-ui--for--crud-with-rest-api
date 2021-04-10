@@ -6,3 +6,9 @@
 .full-width{
     margin-top: 20px;
 }
+mat-label{
+    position: relative;
+    left:10px !important;
+    
+    
+}

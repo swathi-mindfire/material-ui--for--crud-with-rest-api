@@ -132,5 +132,13 @@ export class StudentFormComponent implements OnInit {
     }   
   }
 
+  displayNameCheck(){
+    if(this.studentForm.value.name!=""){
+      this.displayName = true;
+
+    }
+
+  }
+
 
 }

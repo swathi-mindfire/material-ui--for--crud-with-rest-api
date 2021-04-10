@@ -4,12 +4,14 @@
 }
 .s-card{
     cursor: pointer;
+    
 }
 .data-card{
     width: 500px;
+    
 }
 .bg-primary{
-    background-color: 	#5cb85c;
+    background-color:#5cb85c !important;
 }
 .text-white{
     color: white;

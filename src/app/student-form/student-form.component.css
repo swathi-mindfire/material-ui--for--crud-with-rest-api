@@ -51,9 +51,14 @@ mat-card{
     margin-top: 20px;
 }
 mat-card{
-    height: 450px !important;
+    height: 500px !important;
     border-radius: 20px !important;
 }
 .action{
     margin-top:50px
 }
+.show-name{
+    color:white;
+    font-size: 16px;
+}
+

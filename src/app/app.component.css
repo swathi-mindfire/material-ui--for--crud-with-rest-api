@@ -11,6 +11,7 @@ mat-grid-tile{
 .list{
     margin-right: 100px !important;
     margin-left: 100px !important;
+    height: 600px !important;
     
 
 }
@@ -20,7 +21,7 @@ mat-grid-tile{
     border-radius: 20px;
     margin-top: 60px !important;
     margin-left: 50px;
-    height: 500px !important;
+    height: 560px !important;
   
 }
 .main-heading{
@@ -35,4 +36,8 @@ mat-grid-tile{
     margin-left: 68vw;
     color:#4a148c;
     font-weight: 900;
+}
+
+.extra{
+    height: 60px;
 }
